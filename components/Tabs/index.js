@@ -8,10 +8,10 @@
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
 
-const sprintUrl = 'https://lambda-times-backend.herokuapp.com/topics';
+const topicsUrl = 'https://lambda-times-backend.herokuapp.com/topics';
 let topicsEl = document.querySelector('.topics');
 
-axios.get(sprintUrl).then(res => {
+axios.get(topicsUrl).then(res => {
   let topics = res.data.topics;
   topics.forEach(topic => {
     topicsEl.appendChild(buildTab(topic));
