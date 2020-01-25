@@ -10,7 +10,8 @@
 // And add it to the DOM in the .header-container component
 
 function Header() {
-  let headerEl = document.createElement('header');
+  let headerEl = document.createElement('div');
+  headerEl.classList.add('header');
 
   let dateEl = document.createElement('span');
   dateEl.classList.add('date');
